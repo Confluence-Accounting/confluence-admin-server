@@ -11,6 +11,6 @@ class KmoTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(App\Adres::class,50)->create();
     }
 }

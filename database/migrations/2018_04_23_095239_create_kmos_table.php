@@ -15,6 +15,8 @@ class CreateKmosTable extends Migration
     {
         Schema::create('kmos', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('vat');
+            $table->string('name');
             $table->timestamps();
         });
     }
