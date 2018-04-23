@@ -46,7 +46,7 @@ class AccountantController extends Controller
      */
     public function show($id)
     {
-        //
+        return Accountant::find($id);
     }
 
     /**
