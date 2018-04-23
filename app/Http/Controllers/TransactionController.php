@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Transactie;
+use App\Transaction;
 
-class TransactieController extends Controller
+class TransactionController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class TransactieController extends Controller
      */
     public function index()
     {
-         return Transactie::all();
+         return Transaction::all();
     }
 
     /**
