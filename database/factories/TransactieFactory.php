@@ -11,8 +11,9 @@ $factory->define(App\Transactie::class, function (Faker $faker) {
     }
     
     return [
-        'accountnumber' => $faker->buildingNumber(),
-        'customername' => $faker->date($format = 'Y-m-d', $max = 'now'),
+        'accountnumber' => $numbers . "Euro",
+        'customername' => $faker->name(),
         'amount' =>$faker->postcode(),
-        'date' => => $faker->date($format = 'Y-m-d', $max = 'now')
+        'date' => $faker->date($format = 'Y-m-d', $max = 'now')
+        ];
 });

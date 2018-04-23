@@ -14,8 +14,9 @@ class DatabaseSeeder extends Seeder
        $this->call([
             AccountantsTableSeeder::class,
             AdresTableSeeder::class,
-            KmoTableSeeder::class
-            
+            KmoTableSeeder::class,
+            TransactieTableSeeder::class
+               
        ]);
     }
 }
