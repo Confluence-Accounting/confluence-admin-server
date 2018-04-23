@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/xampp/htdocs/conf-admin-server/database/seeds/AccountantsTableSeeder.php</file>
+            <file>file:/C:/xampp/htdocs/conf-admin-server/app/Http/Controllers/Controller.php</file>
+            <file>file:/C:/xampp/htdocs/conf-admin-server/database/migrations/2018_04_23_083539_accountant_add_name.php</file>
+            <file>file:/C:/xampp/htdocs/conf-admin-server/routes/console.php</file>
+            <file>file:/C:/xampp/htdocs/conf-admin-server/database/migrations/2018_04_23_112749_create_transacties_table.php</file>
+            <file>file:/C:/xampp/htdocs/conf-admin-server/database/migrations/2018_04_23_092044_create_adres_table.php</file>
+            <file>file:/C:/xampp/htdocs/conf-admin-server/database/seeds/TransactionTableSeeder.php</file>
+            <file>file:/C:/xampp/htdocs/conf-admin-server/app/Adres.php</file>
+            <file>file:/C:/xampp/htdocs/conf-admin-server/routes/channels.php</file>
+            <file>file:/C:/xampp/htdocs/conf-admin-server/app/Http/Controllers/AdresController.php</file>
+            <file>file:/C:/xampp/htdocs/conf-admin-server/routes/web.php</file>
+            <file>file:/C:/xampp/htdocs/conf-admin-server/app/Transaction.php</file>
+            <file>file:/C:/xampp/htdocs/conf-admin-server/database/migrations/2018_04_23_135310_create_files_table.php</file>
+            <file>file:/C:/xampp/htdocs/conf-admin-server/app/Accountant.php</file>
+            <file>file:/C:/xampp/htdocs/conf-admin-server/app/Http/Controllers/AccountantController.php</file>
+            <file>file:/C:/xampp/htdocs/conf-admin-server/database/factories/TransactionFactory.php</file>
+            <file>file:/C:/xampp/htdocs/conf-admin-server/app/File.php</file>
+            <file>file:/C:/xampp/htdocs/conf-admin-server/app/Kmo.php</file>
+            <file>file:/C:/xampp/htdocs/conf-admin-server/app/Http/Controllers/TransactionController.php</file>
+            <file>file:/C:/xampp/htdocs/conf-admin-server/database/factories/AdresFactory.php</file>
+            <file>file:/C:/xampp/htdocs/conf-admin-server/database/seeds/AdresTableSeeder.php</file>
+            <file>file:/C:/xampp/htdocs/conf-admin-server/database/migrations/2018_04_23_142926_connect_accountant_adres.php</file>
+            <file>file:/C:/xampp/htdocs/conf-admin-server/database/factories/AccountantFactory.php</file>
+            <file>file:/C:/xampp/htdocs/conf-admin-server/database/factories/KmoFactory.php</file>
+            <file>file:/C:/xampp/htdocs/conf-admin-server/database/factories/FileFactory.php</file>
+            <file>file:/C:/xampp/htdocs/conf-admin-server/app/Http/Controllers/KmoController.php</file>
+            <file>file:/C:/xampp/htdocs/conf-admin-server/public/css/app.css</file>
+            <file>file:/C:/xampp/htdocs/conf-admin-server/database/seeds/FileTableSeeder.php</file>
+            <file>file:/C:/xampp/htdocs/conf-admin-server/routes/api.php</file>
+            <file>file:/C:/xampp/htdocs/conf-admin-server/database/migrations/2018_04_23_074130_create_accountants_table.php</file>
+        </group>
+    </open-files>
+</project-private>

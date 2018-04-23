@@ -14,7 +14,7 @@ $factory->define(App\Adres::class, function (Faker $faker) {
         'housenumber' => $faker->buildingNumber(),
         'street' => $faker->streetName(),
         'zipcode' =>$faker->postcode(),
-        'country' => "Belgium"
-        
+        'country' => "Belgium",
+        'accountant_id'=>factory('App\Accountant')->create()->id
     ];
 });
