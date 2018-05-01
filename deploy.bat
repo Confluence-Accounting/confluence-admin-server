@@ -1,5 +1,4 @@
 @ECHO OFF 
-call composer update
 call composer dump-autoload
 call php artisan clear-cache
 call php artisan clear-compiled
