@@ -2,7 +2,7 @@
 
 use Faker\Generator as Faker;
 
-$factory->define(App\Accountant::class, function (Faker $faker) {
+$factory->define(App\Kmo::class, function (Faker $faker) {
     $numbers='';
     
     for($i=0;$i<9;$i++)

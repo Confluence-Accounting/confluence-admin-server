@@ -4,9 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Adres extends Model
+class Invoice extends Model
 {
     protected $fillable = [
-        'housenumber','street','zipcode','country','accountant_id'
+        'name','amount','vat','accountant_id'
     ];
 }

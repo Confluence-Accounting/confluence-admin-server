@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class KmoTableSeeder extends Seeder
+class UserTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,6 +11,6 @@ class KmoTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\Kmo::class,50)->create();
+       factory(App\User::class,50)->create();
     }
 }

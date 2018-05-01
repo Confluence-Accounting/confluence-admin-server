@@ -11,6 +11,6 @@ class AccountantsTableSeeder extends Seeder
      */
     public function run()
     {
-       // factory(App\Accountant::class,50)->create();
+        factory(App\Accountant::class,50)->create();
     }
 }

@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Accountant;
+use App\User;
 
-class AccountantController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class AccountantController extends Controller
      */
     public function index()
     {
-        return Accountant::all();
+        return User::all();
     }
 
     /**
@@ -24,7 +24,7 @@ class AccountantController extends Controller
      */
     public function create()
     {
-        return Accountant::make('accountant;create');
+        //
     }
 
     /**
@@ -46,7 +46,7 @@ class AccountantController extends Controller
      */
     public function show($id)
     {
-        return Accountant::find($id);
+        //
     }
 
     /**

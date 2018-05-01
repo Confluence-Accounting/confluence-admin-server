@@ -13,4 +13,9 @@ class Accountant extends Model
         {
             return $this->hasOne('App\Adres');
         }
+        
+        public function invoice()
+        {
+            return $this->hasOne('App\Invoice');
+        }
 }

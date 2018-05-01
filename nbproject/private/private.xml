@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
-<<<<<<< HEAD
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/xampp/htdocs/conf-admin-server/database/migrations/2014_10_12_100000_create_password_resets_table.php</file>
             <file>file:/C:/xampp/htdocs/conf-admin-server/database/seeds/AccountantsTableSeeder.php</file>
             <file>file:/C:/xampp/htdocs/conf-admin-server/app/Http/Controllers/Controller.php</file>
             <file>file:/C:/xampp/htdocs/conf-admin-server/database/migrations/2018_04_23_083539_accountant_add_name.php</file>
@@ -25,6 +25,7 @@
             <file>file:/C:/xampp/htdocs/conf-admin-server/app/Http/Controllers/TransactionController.php</file>
             <file>file:/C:/xampp/htdocs/conf-admin-server/database/factories/AdresFactory.php</file>
             <file>file:/C:/xampp/htdocs/conf-admin-server/database/seeds/AdresTableSeeder.php</file>
+            <file>file:/C:/xampp/htdocs/conf-admin-server/database/migrations/2014_10_12_000000_create_users_table.php</file>
             <file>file:/C:/xampp/htdocs/conf-admin-server/database/migrations/2018_04_23_142926_connect_accountant_adres.php</file>
             <file>file:/C:/xampp/htdocs/conf-admin-server/database/factories/AccountantFactory.php</file>
             <file>file:/C:/xampp/htdocs/conf-admin-server/database/factories/KmoFactory.php</file>
@@ -36,6 +37,4 @@
             <file>file:/C:/xampp/htdocs/conf-admin-server/database/migrations/2018_04_23_074130_create_accountants_table.php</file>
         </group>
     </open-files>
-=======
->>>>>>> cb38c7ef41725a3b2a7c80f4bec46c8b352ac890
 </project-private>

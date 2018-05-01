@@ -15,7 +15,9 @@ class DatabaseSeeder extends Seeder
             AccountantsTableSeeder::class,
             AdresTableSeeder::class,
             KmoTableSeeder::class,
-            TransactieTableSeeder::class
+            TransactieTableSeeder::class,
+            InvoiceTableSeeder::class,
+            UserTableSeeder::class
                
        ]);
     }
