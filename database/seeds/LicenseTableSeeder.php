@@ -11,6 +11,11 @@ class LicenseTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\License::class,50)->create();
+        foreach(App\Accountant::all() as $user)
+        {
+            $user->licenses()->save(
+                factory(App\License::class)->make()
+            );
+        }
     }
 }

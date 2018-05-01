@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class BookkeepingTableSeeder extends Seeder
+class EmployeeTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,10 +11,10 @@ class BookkeepingTableSeeder extends Seeder
      */
     public function run()
     {
-        foreach(App\License::all() as $user)
+        foreach(App\Accountant::all() as $user)
         {
-            $user->bookkeeping()->save(
-                factory(App\Bookkeeping::class)->make()
+            $user->employees()->save(
+                factory(App\Employee::class)->make()
             );
         }
     }

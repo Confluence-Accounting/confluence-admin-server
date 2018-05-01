@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Employee\Invoice;
 
-class DossierController extends Controller
+class EployeeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +14,7 @@ class DossierController extends Controller
      */
     public function index()
     {
-        //
+         return Employees::all();
     }
 
     /**

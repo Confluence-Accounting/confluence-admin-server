@@ -19,7 +19,8 @@ class DatabaseSeeder extends Seeder
             InvoiceTableSeeder::class,
             UserTableSeeder::class,
             BookkeepingTableSeeder::class,
-            LicenseTableSeeder::class
+            LicenseTableSeeder::class,
+            EmployeeTableSeeder::class
                
        ]);
     }

@@ -22,10 +22,10 @@ class Accountant extends Model
         
          public function employees()
         {
-            return $this->hasMany('App\Invoice');
+            return $this->hasMany('App\Employee');
         }
         
-        public function licences()
+        public function licenses()
         {
             return $this->hasMany('App\License');
         }
