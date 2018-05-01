@@ -1,2 +1,2 @@
-composer install
-php artisan migrate:refresh --seed
+composer dump-autoload
+php artisan migrate:refresh --seed --force
