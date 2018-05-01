@@ -20,6 +20,11 @@ class Accountant extends Model
             return $this->hasMany('App\Invoice');
         }
         
+         public function employees()
+        {
+            return $this->hasMany('App\Invoice');
+        }
+        
         public function licences()
         {
             return $this->hasMany('App\License');
