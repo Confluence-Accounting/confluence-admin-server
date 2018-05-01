@@ -23,7 +23,8 @@ Route::apiResources([
     'address' => 'AddressController',
     'transaction' => 'TransactionController',
     'kmo' => 'KmoController',
-    'file' => 'FileController',
     'invoice' => 'InvoiceController',
-    'user' => 'UserController'
+    'user' => 'UserController',
+    'bookkeeping' => 'BookkeepingController',
+    'license' => 'LicenseController'
 ]);

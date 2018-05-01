@@ -3,20 +3,29 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Accountant;
+use App\Bookkeeping;
 
-class AccountantController extends Controller
+class BookkeepingController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index() //geeft mij alle accountants
+    public function index()
     {
-        return Accountant::all();
+        return Bookkeeping::all();
     }
-    
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        //
+    }
 
     /**
      * Store a newly created resource in storage.
@@ -26,11 +35,7 @@ class AccountantController extends Controller
      */
     public function store(Request $request)
     {
-        $accountant = new accountant();
-        $accountant->fill($request->all());
-        //valideren
-        $accountant->save();
-        return $accountant;
+        //
     }
 
     /**
@@ -41,11 +46,19 @@ class AccountantController extends Controller
      */
     public function show($id)
     {
-       
-        return Accountant::with("addresses")->find($id);
+        //
     }
 
-  
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        //
+    }
 
     /**
      * Update the specified resource in storage.
@@ -56,11 +69,7 @@ class AccountantController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $accountant = Accountant::find($id);
-        $accountant->fill($request->all());
-        
-        $accountant->save();
-        return $accountant;
+        //
     }
 
     /**
@@ -71,6 +80,6 @@ class AccountantController extends Controller
      */
     public function destroy($id)
     {
-        Accountant::destroy($id);
+        //
     }
 }

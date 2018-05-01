@@ -11,6 +11,17 @@ class AddressTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\Address::class,50)->create();
+        foreach(App\Accountant::all() as $user)
+        {
+            $user->addresses()->save(
+                factory(App\Address::class)->make()
+            );
+        }
+        foreach(App\Kmo::all() as $user)
+        {
+            $user->addresses()->save(
+                factory(App\Address::class)->make()
+            );
+        }
     }
 }

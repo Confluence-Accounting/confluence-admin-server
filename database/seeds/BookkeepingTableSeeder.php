@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class FileTableSeeder extends Seeder
+class BookkeepingTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,6 +11,6 @@ class FileTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(App\Bookkeeping::class,50)->create();
     }
 }

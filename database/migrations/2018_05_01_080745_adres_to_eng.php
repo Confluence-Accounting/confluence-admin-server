@@ -35,6 +35,7 @@ class AdresToEng extends Migration
      */
     public function down()
     {
+        Schema::dropIfExists('adres');
         Schema::create('adres', function (Blueprint $table) {
             $table->increments('id');
             $table->string('housenumber');
@@ -45,7 +46,7 @@ class AdresToEng extends Migration
         });
         Schema::table('adres', function (Blueprint $table) {
             $table->unsignedinteger('accountant_id');
-            $table->foreign('accountant_id')->references('id')->on('accountants');
+            //$table->foreign('accountant_id')->references('id')->on('accountants');
         });
         Schema::dropIfExists('addresses');
     }

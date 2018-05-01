@@ -15,7 +15,7 @@ class AddressController extends Controller
      */
     public function index()
     {
-          return Adres::all();
+          return Address::all();
     }
 
     /**

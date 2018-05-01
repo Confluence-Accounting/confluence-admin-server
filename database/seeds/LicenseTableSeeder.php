@@ -11,6 +11,6 @@ class LicenseTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(App\License::class,50)->create();
     }
 }

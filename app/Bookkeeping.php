@@ -4,9 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class License extends Model
+class Bookkeeping extends Model
 {
 	protected $fillable = [
-        'status','accountant_id'
+        'name'
     ];    
 }

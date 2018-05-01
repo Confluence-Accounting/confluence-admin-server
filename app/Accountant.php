@@ -12,11 +12,16 @@ class Accountant extends Model
         
         public function addresses()
         {
-            return $this->hasMany('App\Address');
+            return $this->belongsToMany('App\Address');
         }
         
         public function invoices()
         {
             return $this->hasMany('App\Invoice');
+        }
+        
+        public function licences()
+        {
+            return $this->hasMany('App\License');
         }
 }
