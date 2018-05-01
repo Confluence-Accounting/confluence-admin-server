@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Adres extends Model
+class Address extends Model
 {
     protected $fillable = [
         'housenumber','street','zipcode','country','accountant_id'

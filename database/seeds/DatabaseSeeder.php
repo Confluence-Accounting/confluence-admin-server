@@ -13,7 +13,7 @@ class DatabaseSeeder extends Seeder
     {
        $this->call([
             AccountantsTableSeeder::class,
-            AdresTableSeeder::class,
+            AddressTableSeeder::class,
             KmoTableSeeder::class,
             TransactieTableSeeder::class,
             InvoiceTableSeeder::class,

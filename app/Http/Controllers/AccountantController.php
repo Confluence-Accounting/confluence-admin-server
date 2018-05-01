@@ -14,7 +14,7 @@ class AccountantController extends Controller
      */
     public function index()
     {
-        return Accountant::all();
+        return Accountant::with("addresses")->with("invoices")->get();
     }
 
     /**

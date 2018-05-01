@@ -2,7 +2,7 @@
 
 use Faker\Generator as Faker;
 
-$factory->define(App\Adres::class, function (Faker $faker) {
+$factory->define(App\Address::class, function (Faker $faker) {
     
     $accountant = App\Accountant::orderByRaw('RAND()')->first();
     

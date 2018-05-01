@@ -17,12 +17,13 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 
 });
+
 Route::apiResources([
     'accountant' => 'AccountantController',
-    'adres' => 'AdresController',
+    'address' => 'AddressController',
     'transaction' => 'TransactionController',
     'kmo' => 'KmoController',
     'file' => 'FileController',
     'invoice' => 'InvoiceController',
     'user' => 'UserController'
-    ]);
+]);

@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Adres;
+use App\Address;
 
-class AdresController extends Controller
+class AddressController extends Controller
 {
     /**
      * Display a listing of the resource.

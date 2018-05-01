@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class AdresTableSeeder extends Seeder
+class AddressTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,6 +11,6 @@ class AdresTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\Adres::class,50)->create();
+        factory(App\Address::class,50)->create();
     }
 }

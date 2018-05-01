@@ -8,14 +8,15 @@ class Accountant extends Model
 {
 	protected $fillable = [
         'vat','name'
-    ];    
-        public function adres()
+        ];
+        
+        public function addresses()
         {
-            return $this->hasOne('App\Adres');
+            return $this->hasMany('App\Address');
         }
         
-        public function invoice()
+        public function invoices()
         {
-            return $this->hasOne('App\Invoice');
+            return $this->hasMany('App\Invoice');
         }
 }

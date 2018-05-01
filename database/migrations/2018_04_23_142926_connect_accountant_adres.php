@@ -27,7 +27,7 @@ class ConnectAccountantAdres extends Migration
      */
     public function down()
     {
-    Schema::table('adres', function (Blueprint $table) {
+        Schema::table('adres', function (Blueprint $table) {
             $table->dropForeign('adres_accountant_id_foreign');
             $table->dropColumn('accountant_id');
         });
