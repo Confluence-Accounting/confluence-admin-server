@@ -18,7 +18,7 @@ class CreateEmployeesTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->unsignedinteger('accountant_id');
-            $table->foreign('accountant_id')->references('id')->on('accountants');
+            $table->foreign('accountant_id')->references('id')->on('accountants')->onDelete('cascade');
             $table->timestamps();
         });
     }

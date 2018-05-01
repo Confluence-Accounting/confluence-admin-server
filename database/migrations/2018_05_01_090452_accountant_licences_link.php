@@ -15,7 +15,7 @@ class AccountantLicencesLink extends Migration
     {
         Schema::table('licenses', function (Blueprint $table) {
             $table->unsignedinteger('accountant_id');
-            $table->foreign('accountant_id')->references('id')->on('accountants');
+            $table->foreign('accountant_id')->references('id')->on('accountants')->onDelete('cascade');
         });
     }
 
