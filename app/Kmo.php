@@ -18,4 +18,9 @@ class Kmo extends Model
         {
             return $this->belongsToMany('App\Address');
         }
+        
+         public function Bookkeepings()
+        {
+            return $this->hasOne('App\Bookkeeping');
+        }
 }
