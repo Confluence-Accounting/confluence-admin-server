@@ -12,20 +12,11 @@ class KmoController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+   public function index()
     {
-        return Kmo::all();
+         return Kmos::all();
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
 
     /**
      * Store a newly created resource in storage.
@@ -35,7 +26,11 @@ class KmoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $kmo = new Kmo();
+        $kmo->fill($request->all());
+        //valideren
+        $kmo->save();
+        return $kmo;
     }
 
     /**
@@ -44,22 +39,12 @@ class KmoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
-    {
-        //
+     public function show($id)
+    {   
+        return Kmo::with("addresses")->find($id);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
+   
     /**
      * Update the specified resource in storage.
      *
@@ -67,9 +52,13 @@ class KmoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+   public function update(Request $request, $id)
     {
-        //
+        $kmo = Kmo::find($id);
+        $kmo->fill($request->all());
+        
+        $kmo->save();
+        return $kmo;
     }
 
     /**
@@ -80,6 +69,6 @@ class KmoController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Kmo::destroy($id);
     }
 }
