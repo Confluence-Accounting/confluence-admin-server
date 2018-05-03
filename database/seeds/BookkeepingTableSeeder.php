@@ -11,17 +11,19 @@ class BookkeepingTableSeeder extends Seeder
      */
     public function run()
     {
-       foreach(App\Kmo::all() as $user)
+       //voor elke licentie wil ik een boekhouding, maar dan heb ik ook een KMO nodig
+       
+        
+        foreach(App\License::all() as $license)
         {
-            $user->bookkeeping()->save(
-                factory(App\Bookkeeping::class)->make()
-            );
-        } 
-        foreach(App\License::all() as $user)
-        {
-            $user->bookkeeping()->save(
-                factory(App\Bookkeeping::class)->make()
-            );
+            $kmo=factory(App\Kmo::class)->create();
+           
+            $bookkeeping=factory(App\Bookkeeping::class)->make();
+            $bookkeeping->kmo()->associate($kmo);
+            $bookkeeping->license()->associate($license);
+            
+            $bookkeeping->save();
+            
         }
         
     }

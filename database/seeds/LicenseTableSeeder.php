@@ -11,7 +11,7 @@ class LicenseTableSeeder extends Seeder
      */
     public function run()
     {
-        
+        //voor elke accountant wil ik een licentie
         foreach(App\Accountant::all() as $user)
         {
             $user->licenses()->save(

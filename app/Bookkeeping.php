@@ -14,10 +14,13 @@ class Bookkeeping extends Model
         'name'
         ];    
         
+        public function kmo()
+        {
+            return $this->belongsTo('App\Kmo');
+        }
         
-       /* public function license()
+       public function license()
         {
             return $this->belongsTo('App\License');
         }
-   */
 }
