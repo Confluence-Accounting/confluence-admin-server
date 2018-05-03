@@ -11,11 +11,18 @@ class BookkeepingTableSeeder extends Seeder
      */
     public function run()
     {
+       foreach(App\Kmo::all() as $user)
+        {
+            $user->bookkeeping()->save(
+                factory(App\Bookkeeping::class)->make()
+            );
+        } 
         foreach(App\License::all() as $user)
         {
             $user->bookkeeping()->save(
                 factory(App\Bookkeeping::class)->make()
             );
         }
+        
     }
 }
