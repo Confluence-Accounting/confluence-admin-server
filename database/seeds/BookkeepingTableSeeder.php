@@ -17,12 +17,12 @@ class BookkeepingTableSeeder extends Seeder
                 factory(App\Bookkeeping::class)->make()
             );
         } 
-        /*foreach(App\License::all() as $user)
+        foreach(App\License::all() as $user)
         {
             $user->bookkeeping()->save(
                 factory(App\Bookkeeping::class)->make()
             );
         }
-        */ 
+        
     }
 }
