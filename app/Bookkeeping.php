@@ -15,9 +15,9 @@ class Bookkeeping extends Model
         ];    
         
         
-        public function license()
+       /* public function license()
         {
             return $this->belongsTo('App\License');
         }
-   
+   */
 }

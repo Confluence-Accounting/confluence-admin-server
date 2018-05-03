@@ -11,6 +11,7 @@ class LicenseTableSeeder extends Seeder
      */
     public function run()
     {
+        
         foreach(App\Accountant::all() as $user)
         {
             $user->licenses()->save(

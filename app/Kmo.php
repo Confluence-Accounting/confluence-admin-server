@@ -19,7 +19,7 @@ class Kmo extends Model
             return $this->belongsToMany('App\Address');
         }
         
-         public function Bookkeepings()
+         public function bookkeeping()
         {
             return $this->hasOne('App\Bookkeeping');
         }
