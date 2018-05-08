@@ -6,19 +6,18 @@ use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
-class AccountantTest extends TestCase
+class KmoTest extends TestCase
 {
     /**
      * A basic test example.
      *
      * @return void
      */
-    public function testCreateAccountant()
+    public function testCreateKmo()
     {
-        $response = $this->json('POST','/api/accountant',['name' => 'Sally','vat' => 'BE123546']);
+        $response = $this->json('POST','/api/kmo',['name' => 'Sally','vat' => 'BE123546']);
         
         $response
                 ->assertstatus(201);
     }
-    
 }

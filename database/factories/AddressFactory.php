@@ -8,6 +8,7 @@ $factory->define(App\Address::class, function (Faker $faker) {
         'housenumber' => $faker->buildingNumber(),
         'street' => $faker->streetName(),
         'zipcode' =>$faker->postcode(),
-        'country' => "Belgium"
+        'country' => "Belgium",
+        'telephone' => "032965485"
     ];
 });

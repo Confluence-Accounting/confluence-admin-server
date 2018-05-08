@@ -13,6 +13,6 @@ class Employee extends Model
     protected $dates = ['deleted_at'];
     
     protected $fillable = [
-        'name'
+        'name','accountant_id'
     ];
 }

@@ -11,7 +11,7 @@ class License extends Model
 
     protected $dates = ['deleted_at'];
 	protected $fillable = [
-        'status'
+        'status','accountant_id'
     ];    
         public function bookkeeping()
         {

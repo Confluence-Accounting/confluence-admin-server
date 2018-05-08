@@ -13,20 +13,11 @@ class AddressController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index() //geeft mij alle accountants
     {
-          return Address::all();
+        return Address::all();
     }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
+    
 
     /**
      * Store a newly created resource in storage.
@@ -36,7 +27,11 @@ class AddressController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $address = new Address();
+        $address->fill($request->all());
+        //valideren
+        $address->save();
+        return $address;
     }
 
     /**
@@ -47,19 +42,11 @@ class AddressController extends Controller
      */
     public function show($id)
     {
-        //
+       
+        return Address::find($id);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
+  
 
     /**
      * Update the specified resource in storage.
@@ -70,7 +57,11 @@ class AddressController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $address = Address::find($id);
+        $address->fill($request->all());
+        
+        $address->save();
+        return $address;
     }
 
     /**
@@ -81,6 +72,6 @@ class AddressController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Address::destroy($id);
     }
 }

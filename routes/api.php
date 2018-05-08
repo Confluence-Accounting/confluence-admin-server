@@ -26,5 +26,6 @@ Route::apiResources([
     'invoice' => 'InvoiceController',
     'user' => 'UserController',
     'bookkeeping' => 'BookkeepingController',
-    'license' => 'LicenseController'
+    'license' => 'LicenseController',
+    'employee' => 'EmployeeController'
 ]);

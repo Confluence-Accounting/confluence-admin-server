@@ -11,6 +11,6 @@ class Address extends Model
 
     protected $dates = ['deleted_at'];
     protected $fillable = [
-        'housenumber','street','zipcode','country'
+        'housenumber','street','zipcode','country','telephone'
     ];
 }

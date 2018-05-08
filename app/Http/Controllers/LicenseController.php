@@ -12,20 +12,11 @@ class LicenseController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index() //geeft mij alle accountants
     {
         return License::all();
     }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
+    
 
     /**
      * Store a newly created resource in storage.
@@ -35,7 +26,11 @@ class LicenseController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $license = new license();
+        $license->fill($request->all());
+        //valideren
+        $license->save();
+        return $license;
     }
 
     /**
@@ -45,20 +40,11 @@ class LicenseController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show($id)
-    {
-        //
+    {    
+        return License::find($id);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
+  
 
     /**
      * Update the specified resource in storage.
@@ -69,7 +55,11 @@ class LicenseController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $license = License::find($id);
+        $license->fill($request->all());
+        
+        $license->save();
+        return $license;
     }
 
     /**
@@ -80,6 +70,6 @@ class LicenseController extends Controller
      */
     public function destroy($id)
     {
-        //
+        License::destroy($id);
     }
 }

@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Employee\Invoice;
+use App\Employee;
 
-class EployeeController extends Controller
+class EmployeeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,7 +41,7 @@ class EployeeController extends Controller
      */
      public function show($id)
     {   
-        return Employee::with("addresses")->find($id);
+        return Employee::find($id);
     }
 
    

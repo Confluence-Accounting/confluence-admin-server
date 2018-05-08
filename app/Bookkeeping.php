@@ -11,7 +11,7 @@ class Bookkeeping extends Model
 
         protected $dates = ['deleted_at'];
 	protected $fillable = [
-        'name'
+        'name','license_id','kmo_id'
         ];    
         
         public function kmo()
